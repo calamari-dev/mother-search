@@ -11,10 +11,16 @@ const isValid = (event: HandlerEvent) => {
 
 const handler: Handler = async (event, context) => {
   if (!isValid(event)) {
-    return { statusCode: 403, body: JSON.stringify({ message: "error" }) };
+    return {
+      statusCode: 403,
+      body: JSON.stringify({ message: Object.keys(process.env) }),
+    };
   }
 
-  return { statusCode: 200, body: JSON.stringify({ message: "succeed" }) };
+  return {
+    statusCode: 200,
+    body: JSON.stringify({ message: Object.keys(process.env) }),
+  };
 };
 
 export { handler };
