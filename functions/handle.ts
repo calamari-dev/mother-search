@@ -13,13 +13,13 @@ const handler: Handler = async (event, context) => {
   if (!isValid(event)) {
     return {
       statusCode: 403,
-      body: JSON.stringify({ message: Object.keys(process.env) }),
+      body: JSON.stringify({ message: "error" }),
     };
   }
 
   return {
     statusCode: 200,
-    body: JSON.stringify({ message: Object.keys(process.env) }),
+    body: JSON.stringify({ message: "succeed" }),
   };
 };
 
