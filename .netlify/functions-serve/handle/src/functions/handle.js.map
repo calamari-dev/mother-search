@@ -1,0 +1,8 @@
+{
+  "version": 3,
+  "sources": ["../../../../calamari-dev/mother-search/functions/handle.ts"],
+  "sourceRoot": "C:/Users/pacif/AppData/Local/Temp/tmp-20460-j0BTYHdMlvtY",
+  "sourcesContent": ["import type { Handler, HandlerEvent } from \"@netlify/functions\";\n\nconst isValid = (event: HandlerEvent) => {\n  try {\n    const body = JSON.parse(event.body || \"{}\");\n    return body.CREDENTIAL === process.env.CREDENTIAL;\n  } catch {\n    return false;\n  }\n};\n\nconst handler: Handler = async (event, context) => {\n  if (!isValid(event)) {\n    return { statusCode: 403 };\n  }\n\n  return { statusCode: 200 };\n};\n\nexport { handler };\n"],
+  "mappings": ";;;;;;;;;AAAA;AAAA;AAAA;AAEA,IAAM,UAAU,CAAC,UAAwB;AACvC,MAAI;AACF,UAAM,OAAO,KAAK,MAAM,MAAM,QAAQ;AACtC,WAAO,KAAK,eAAe,QAAQ,IAAI;AAAA,UACvC;AACA,WAAO;AAAA;AAAA;AAIX,IAAM,UAAmB,OAAO,OAAO,YAAY;AACjD,MAAI,CAAC,QAAQ,QAAQ;AACnB,WAAO,EAAE,YAAY;AAAA;AAGvB,SAAO,EAAE,YAAY;AAAA;",
+  "names": []
+}

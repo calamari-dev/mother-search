@@ -1,0 +1,23 @@
+{
+  "name": "mother-search",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "netlify dev --live",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "calamari-dev <pacific.flying.squid+calamari@gmail.com> (https://github.com/calamari-dev)",
+  "license": "MIT",
+  "dependencies": {
+    "@netlify/functions": "^0.7.2"
+  },
+  "devDependencies": {
+    "@types/node": "^16.4.10",
+    "@typescript-eslint/eslint-plugin": "^4.29.0",
+    "@typescript-eslint/parser": "^4.29.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "typescript": "^4.3.5"
+  }
+}
