@@ -10,6 +10,7 @@
   "author": "calamari-dev <pacific.flying.squid+calamari@gmail.com> (https://github.com/calamari-dev)",
   "license": "MIT",
   "dependencies": {
+    "@line/bot-sdk": "^7.3.0",
     "@netlify/functions": "^0.7.2"
   },
   "devDependencies": {
