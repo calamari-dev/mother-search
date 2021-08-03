@@ -11,10 +11,10 @@ const isValid = (event: HandlerEvent) => {
 
 const handler: Handler = async (event, context) => {
   if (!isValid(event)) {
-    return { statusCode: 403 };
+    return { statusCode: 403, message: "error" };
   }
 
-  return { statusCode: 200 };
+  return { statusCode: 200, message: "succeed" };
 };
 
 export { handler };

@@ -122,3 +122,6 @@ dist
 
 # End of https://www.toptal.com/developers/gitignore/api/vscode,node
 .npmrc
+
+# Local Netlify folder
+.netlify
