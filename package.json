@@ -5,20 +5,37 @@
   "main": "index.js",
   "scripts": {
     "dev": "netlify dev --live",
+    "build": "webpack --config webpack.config.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "calamari-dev <pacific.flying.squid+calamari@gmail.com> (https://github.com/calamari-dev)",
   "license": "MIT",
   "dependencies": {
     "@line/bot-sdk": "^7.3.0",
-    "@netlify/functions": "^0.7.2"
+    "@netlify/functions": "^0.7.2",
+    "axios": "^0.21.1",
+    "cookie": "^0.4.1",
+    "hast-util-to-html": "^8.0.1",
+    "hastscript": "^7.0.1",
+    "io-ts": "^2.2.16",
+    "query-string": "^7.0.1",
+    "uuid": "^8.3.2"
   },
   "devDependencies": {
+    "@types/cookie": "^0.4.1",
     "@types/node": "^16.4.10",
+    "@types/uuid": "^8.3.1",
+    "@types/webpack": "^5.28.0",
     "@typescript-eslint/eslint-plugin": "^4.29.0",
     "@typescript-eslint/parser": "^4.29.0",
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
-    "typescript": "^4.3.5"
+    "html-webpack-plugin": "^5.3.2",
+    "ts-loader": "^9.2.5",
+    "ts-node": "^10.1.0",
+    "typescript": "^4.3.5",
+    "webpack": "^5.48.0",
+    "webpack-cli": "^4.7.2"
   }
 }
