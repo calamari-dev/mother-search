@@ -15,6 +15,7 @@
     "@netlify/functions": "^0.7.2",
     "axios": "^0.21.1",
     "cookie": "^0.4.1",
+    "fp-ts": "^2.11.1",
     "hast-util-to-html": "^8.0.1",
     "hastscript": "^7.0.1",
     "io-ts": "^2.2.16",
