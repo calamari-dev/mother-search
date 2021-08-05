@@ -5,8 +5,9 @@ import { toHtml } from "hast-util-to-html";
 import axios from "axios";
 import * as t from "io-ts";
 import type { Handler } from "@netlify/functions";
-import { callbackUrl, interfaceUrl } from "./config";
 
+const callbackUrl = `${process.env.URL!}/.netlify/functions/callback`;
+const interfaceUrl = `${process.env.URL!}`;
 const stateType = t.type({ state: t.string });
 const codeType = t.type({ code: t.string });
 

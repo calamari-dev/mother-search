@@ -4,7 +4,8 @@ import { v4 as createUuid } from "uuid";
 import { h } from "hastscript";
 import { toHtml } from "hast-util-to-html";
 import type { Handler } from "@netlify/functions";
-import { callbackUrl } from "./config";
+
+const callbackUrl = `${process.env.URL!}/.netlify/functions/callback`;
 
 const createHtml = (state: string) => {
   const params = stringify({
